@@ -11,7 +11,6 @@ public class DESBruteForce {
         String knownPlaintext = "I love pizza. You love pizza. Everyone loves pizza.";
 
         // Replace this with the actual Base64-encoded output from your Crypto.java
-        // program
         String knownCiphertext = "wM9cvIXUFYZqKRdKMwenyMd1PJeAQxkuUtK4Yxf9cnrmCSQlBPSZhIDqj2CM3adgbRcdfXZveNA=";
         byte[] knownCiphertextBytes = Base64.getDecoder().decode(knownCiphertext);
 
