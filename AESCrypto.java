@@ -10,7 +10,9 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class AESCrypto {
-    public static void main(String[] args) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, IllegalBlockSizeException, BadPaddingException {
+    public static void main(String[] args) 
+        throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException,
+         InvalidAlgorithmParameterException, IllegalBlockSizeException, BadPaddingException {
         
         byte[] keyArray = new byte[] {
                 'T', 'h', 'i', 's', 'I', 's', 'A', 'K',
