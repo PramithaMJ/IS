@@ -42,5 +42,15 @@ public class RSA {
         byte[] decryptedBytes = decryptCipher.doFinal(encryptedBytes);
         String decryptedMessage = new String(decryptedBytes, StandardCharsets.UTF_8);
         System.out.println("\nDecrypted Message: " + decryptedMessage);
+
+        // Check if decryption was successful
+        if (message.equals(decryptedMessage)) {
+            System.out.println("\nDecryption successful: The decrypted message matches the original.");
+        } else {
+            System.out.println("\nDecryption failed: The decrypted message does not match the original.");
+        }
+        System.out.println("RSA Algorithm: " + publicKey.getAlgorithm());
+        System.out.println("Public Key Format: " + publicKey.getFormat());
+        System.out.println("Private Key Format: " + privateKey.getFormat());
     }
 }
