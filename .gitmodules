@@ -1,0 +1,3 @@
+[submodule "encrypted-chat-app"]
+	path = encrypted-chat-app
+	url = https://github.com/PramithaMJ/Ecrypted-Chat-App.git
