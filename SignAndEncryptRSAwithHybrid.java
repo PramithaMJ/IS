@@ -20,7 +20,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-public class SignAndEncryptRSA {
+public class SignAndEncryptRSAwithHybrid {
         public static void main(String[] args) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException,
             IllegalBlockSizeException, BadPaddingException, SignatureException, InvalidAlgorithmParameterException {
 
@@ -30,20 +30,6 @@ public class SignAndEncryptRSA {
 
         PrivateKey privateKey = keyPair.getPrivate();
         PublicKey publicKey = keyPair.getPublic();
-
-        // use Cypher Key instead signature in this code
-
-        // alices private key and public key
-        // bob private key and public key
-
-
-        // Signed and encrypted message
-        // encrypted with bobs private key
-        // decrypted singned text with alices public key
-        // doFinal get the message
-
-        // Depcripted signed message
-
 
         System.out.println("Public Key: " + publicKey);
         System.out.println("Private Key: " + privateKey);
